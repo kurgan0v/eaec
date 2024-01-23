@@ -1,0 +1,32 @@
+.spinner{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cell_wrapper{
+  display: -webkit-box;
+  max-height: 10em;
+  font-size: 11px;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.pagination{
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.sizeChanger{
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+@media (max-width: 768px) {
+  .pagination{
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}

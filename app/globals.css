@@ -1,0 +1,92 @@
+*{
+  font-family: Franklin Gothic Book Regular, Tahoma, Geneva, sans-serif;
+}
+p, b, div{
+  color: #444;
+  font-size: 14px;
+}
+body{
+  background: #f4f4f4;
+  margin: 0;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1650px;
+}
+.ant-table-wrapper .ant-table-thead>tr>th{
+  padding: 10px;
+}
+.table-container-main{
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  overflow-x: auto;
+}
+.table-container-main .ant-table-row{
+  cursor: pointer;
+}
+
+.table-container-main .ant-table-row .ant-table-cell:last-of-type{
+  white-space: nowrap;
+}
+.ant-table-row .ant-table-cell:nth-of-type(2n){
+  background: #f4f4f4;
+}
+.table-container-main .ant-table-wrapper .ant-table-tbody >tr >td.ant-table-cell-row-hover, .table-container-main .ant-table-wrapper .ant-table-tbody >tr.ant-table-row:hover>td{
+  background: rgba(5, 145, 255, 0.1);
+}
+.ant-table-wrapper .ant-table-thead >tr>th{
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 11px;
+}
+.ant-table-wrapper .ant-table-thead >tr>th{
+  text-align: center;
+}
+.ant-table-wrapper .ant-table-tbody >tr >td{
+  text-align: center;
+  padding: 10px;
+  font-size: 11px;
+}
+.ant-table-wrapper .ant-table-tbody >tr >td:nth-of-type(3){
+  max-width: 300px;
+}
+.ant-table-wrapper .ant-table-tbody >tr >td:nth-of-type(4){
+  max-width: 300px;
+}
+.ant-table-wrapper .ant-table-thead>tr>th{
+  padding: 10px;
+}
+.ant-table-wrapper .ant-table-tbody >tr >td{
+  text-align: center;
+  padding: 10px;
+  font-size: 11px;
+}
+.ant-table-wrapper .ant-table-tbody >tr >td {
+  border-top: 1px solid #cccccc;
+  border-bottom: none;
+}
+.ant-pagination .ant-pagination-item-active{
+  background: none;
+  border: none;
+}
+.ant-pagination .ant-pagination-item-active a{
+  color: rgb(0, 114, 198);
+}
+.ant-table-cell a{
+  color: #444 !important;
+}
+
+@media(max-width: 990px){
+  main{
+    overflow: hidden;
+  }
+  .table-container-main{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    width: 100%;
+    border-radius: 3px;
+  }
+}
